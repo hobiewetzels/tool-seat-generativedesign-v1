@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@font-face{
+    font-family: 'SEAT-bnc-black';
+    src: url('fonts/Web/woff/SEATBCN-Black.woff') format('woff');
+}
+@font-face{
+    font-family: 'SEAT-bnc-regular';
+    src: url('fonts/Web/woff/SEATBCN-Regular.woff') format('woff');
+}
+
+#art{
+    width: 970px;
+    height: 250px;
+    position: absolute;
+    z-index: 100;
+}
+#cta{
+
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: 'SEAT-bnc-black';
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+#controlsContainer{
+    position: absolute;
+    z-index: 200;
+    padding: 50px;
+    top: 0;
+    right: 0;
+    background-color: #F0EDF0;
+}
+#logo{
+    width: 50px;
+    float: right;
+    margin-left: 20px;
+}
+.cta-container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+h1, h2, h3{
+    font-family: 'Lato', sans-serif;
+    color: black;
+    text-transform: none;
+    font-weight: bold;
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+h3{
+    margin-bottom: 10px;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+.slider:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;   
+  background: white;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: #BA68C8;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #BA68C8;
+  cursor: pointer;
+}
+input, select{
+    margin-bottom: 20px;
+}
+button{
+    display: block;
+}
+output{
+    font-family: arial;
+    color: #BA68C8;
+    font-weight: bold;
+}
+.left-container{
+    margin: 20px;
+}
+.left-container h2{
+    font-size: 36px;
+    line-height: 36px;
+    white-space: pre-wrap;
+    font-family: 'SEAT-bnc-black';
+    font-weight: normal;
+    font-style: normal;
+}
+.left-container h3{
+    letter-spacing: -0.001em;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    color: rgba(0, 0, 0, 1);
+    white-space: pre-wrap;
+    font-family: 'SEAT BCN Regular';
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'SEAT-bnc-regular';
+}
+#explore{
+    font-size: 26px;
+}
+#outputcodecontainer{
+    position: absolute;
+    z-index: 100;
+    background-color: #F0EDF0;
+    margin: 50px;
+    padding: 25px;
+    width: 300px;
+}
